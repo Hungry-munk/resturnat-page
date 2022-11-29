@@ -1,5 +1,8 @@
-function buildHeader () {
 
+function buildHeader () {
+    const header = document.createElement("header")
+    const h1 = document.createElement("h1")
+    const nav = document.createElement("h1")
 }
 
 function buildFooter () {
