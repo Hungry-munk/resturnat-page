@@ -1,1 +1,5 @@
-console.log("test 3")
+import { buildFooter,buildHeader } from "./website";
+
+const content = document.getElementById("content")
+
+content.appendChild(buildFooter())
