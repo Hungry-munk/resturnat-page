@@ -70,13 +70,19 @@ html,
 
 #content button:hover:first-of-type {
     background-color:rgba(0, 0, 0, 0.08)
-
+    
 }
 /* main styling  */
 #content .main {
     grid-area: main;
+    display: flex;
 
 }
+
+#content .home {
+
+}
+
 
 img.chefImage {
     width: 300px;
