@@ -25,7 +25,7 @@ export default function buildHome () {
 
     home.appendChild(image)
     home.appendChild(imageTxt)
-    home.classList.add("main")
+    home.classList.add("main","home")
 
     return home
 }
