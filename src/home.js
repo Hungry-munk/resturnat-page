@@ -11,6 +11,7 @@ export default function buildHome () {
     headChefName.textContent = "Arsam Abbasadeh"
     headChefPara.textContent = "Paragraph Text. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Cras, dapibus ac facilisis in, meet head chef - Arsam Abbaszadeh."
 
+    image.classList.add("chefImage")
     headChefTxt.classList.add("headChefTxt")
     headChefName.classList.add("headChefName")
     headChefPara.classList.add("headChefPara")
@@ -24,6 +25,7 @@ export default function buildHome () {
 
     home.appendChild(image)
     home.appendChild(imageTxt)
+    home.classList.add("main")
 
     return home
 }

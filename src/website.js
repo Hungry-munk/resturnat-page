@@ -33,7 +33,7 @@ function buildFooter () {
     gitHubLogo.classList.add("fa-brands","fa-github")
     gitHubLink.setAttribute("src","https://github.com/Hungry-munk/resturnat-page/tree/main/dist")
     gitHubLink.setAttribute("alt","github")
-    footerTxt.textContent = `CopyRight ⓒ ${new Date().getFullYear()}`
+    footerTxt.textContent = `CopyRight ⓒ Hungry_munk ${new Date().getFullYear()}`
 
     gitHubLink.appendChild(gitHubLogo)
     footer.appendChild(footerTxt)
