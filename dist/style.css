@@ -36,8 +36,7 @@ html,
     justify-content: space-between;
     padding:  5px 10px;
     align-items: center;
-
-
+    position: relative;
 }
 #content header div {
     display: flex;
@@ -58,9 +57,21 @@ html,
 
 #content button:first-of-type {
     border: 1px solid black;
-
 }
 
+#content button:hover {
+    cursor: pointer;
+    z-index: 1;
+}
+
+#content button:hover:not(:first-of-type) {
+    text-decoration: underline ;
+}
+
+#content button:hover:first-of-type {
+    background-color:rgba(0, 0, 0, 0.08)
+
+}
 /* main styling  */
 #content .main {
     grid-area: main;
