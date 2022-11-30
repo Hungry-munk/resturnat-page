@@ -1,4 +1,3 @@
-
 function buildHeader () {
     const header = document.createElement("header")
     const h1 = document.createElement("h1")
@@ -13,6 +12,7 @@ function buildHeader () {
     for (let i = 0; i<3 ; i++ ) {
         const navBtn = document.createElement("button")
         navBtn.textContent = buttonTxts[i]
+        navBtn.classList.add(`${buttonTxts[i].toLowerCase()}Btn`)
         nav.appendChild(navBtn)
     }
 

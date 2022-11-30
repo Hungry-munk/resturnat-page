@@ -27,7 +27,7 @@ export default function buildContact () {
 
     addressContainer.appendChild(addressIcon)
     addressContainer.appendChild(address)
-    // completing the copntact element
+    // completing the contact element
     contactPage.appendChild(phoneNumberContainer)
     contactPage.appendChild(addressContainer)
     contactPage.appendChild(locationImage)
