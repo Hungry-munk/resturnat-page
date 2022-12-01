@@ -27,6 +27,9 @@ html,
         "main"
         "footer"
     ;
+    background-image: url(https://media.istockphoto.com/id/938742222/photo/cheesy-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=D1z4xPCs-qQIZyUqRcHrnsJSJy_YbUD9udOrXpilNpI=);
+    background-repeat: no-repeat ;
+    background-size:cover ;
 }
 
 /* heaer styling  */
@@ -37,6 +40,7 @@ html,
     padding:  5px 10px;
     align-items: center;
     position: relative;
+    background-color: var(--white);
 }
 #content header div {
     display: flex;
@@ -73,14 +77,17 @@ html,
     
 }
 /* main styling  */
+
+#content
 #content .main {
     grid-area: main;
     display: flex;
 
 }
 
-#content .home {
-
+#content main {
+    background-color:rgba(135, 135, 135, 0.7) ;
+    
 }
 
 
@@ -96,6 +103,7 @@ img.chefImage {
     padding: 12px 0;
     font-weight: 500;
     align-items: center;
+    background-color: var(--white);
 }
 
 #content footer .fa-github {
