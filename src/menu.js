@@ -32,8 +32,8 @@ function buildMenuItems () {
 
         item.classList.add("item")
         itemHeader.classList.add("itemHeader")
-        itemDescription.classList.add("ItemDescription")
-        itemImage.classList.add("ItemImage")
+        itemDescription.classList.add("itemDescription")
+        itemImage.classList.add("itemImage")
 
         item.appendChild(itemImage)
         item.appendChild(itemHeader)
