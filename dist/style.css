@@ -190,7 +190,56 @@ div.headChefName {
     padding-bottom: 10px;
 }
 
+/* contact styling */
 
+#content .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#content .contact > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.details {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+.details:last-of-type {
+    margin-bottom: 25px;
+}
+
+.details:last-of-type:hover::after {
+    content: "visit us";
+    background-color: rgba(135, 135, 135, 0.9);
+    border-radius: 10px;
+    padding: 3px 6px;
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.details:first-of-type:hover::after {
+    content: "call us";
+    background-color: rgba(135, 135, 135, 0.9);
+    border-radius: 10px;
+    padding: 3px 6px;
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.contact img {
+    width: clamp(150px,60vw,600px);
+    border-radius: 10px;
+    border: 4px solid;
+}
 
 /* footer styling */
 #content footer {

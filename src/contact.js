@@ -3,6 +3,7 @@ export default function buildContact () {
     const phoneNumberContainer = document.createElement("div")
     const addressContainer = document.createElement("div")
     const locationImage = document.createElement("img")
+    const contactContainer = document.createElement("div")
     // icons
     const phoneIcon = document.createElement("i")
     const addressIcon = document.createElement("i")
@@ -18,6 +19,7 @@ export default function buildContact () {
     // fontawesome icons
     phoneIcon.classList.add("fa-solid","fa-phone")
     addressIcon.classList.add("fa-solid","fa-location-pin")
+    contactPage.classList.add("main","contact")
     // details txt content
     phoneNumber.textContent = "012345678"
     address.textContent = "area 51"
@@ -27,10 +29,15 @@ export default function buildContact () {
 
     addressContainer.appendChild(addressIcon)
     addressContainer.appendChild(address)
+
+    phoneNumberContainer.classList.add("details")
+    addressContainer.classList.add("details")
     // completing the contact element
-    contactPage.appendChild(phoneNumberContainer)
-    contactPage.appendChild(addressContainer)
-    contactPage.appendChild(locationImage)
+    contactContainer.appendChild(phoneNumberContainer)
+    contactContainer.appendChild(addressContainer)
+    contactContainer.appendChild(locationImage)
+
+    contactPage.appendChild(contactContainer)
 
     return contactPage
 }
